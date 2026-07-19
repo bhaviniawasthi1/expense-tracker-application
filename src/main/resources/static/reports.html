@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultIQ - Reports</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VaultIQ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="add-transaction.html">Add Transaction</a></li>
+                <li><a href="transactions.html">Transactions</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Reports</h1>
+
+        <div class="summary-cards">
+            <div class="card card-income">
+                <h3>Total Income</h3>
+                <p id="rptIncome">₹0.00</p>
+            </div>
+            <div class="card card-expense">
+                <h3>Total Expense</h3>
+                <p id="rptExpense">₹0.00</p>
+            </div>
+            <div class="card card-balance">
+                <h3>Balance</h3>
+                <p id="rptBalance">₹0.00</p>
+            </div>
+        </div>
+
+        <section class="expense-breakdown">
+            <h2>Expense Breakdown by Category</h2>
+            <div id="chartContainer"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>% of Total</th>
+                    </tr>
+                </thead>
+                <tbody id="breakdownTbody">
+                    <tr><td colspan="3" class="text-center">No expense data.</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 VaultIQ. Built by Bhavini Awasthi</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>loadReports();</script>
+</body>
+</html>

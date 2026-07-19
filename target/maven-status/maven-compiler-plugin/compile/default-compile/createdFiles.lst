@@ -1,0 +1,12 @@
+com\vaultiq\model\Transaction$Type.class
+com\vaultiq\repository\CategoryRepository.class
+com\vaultiq\controller\CategoryController.class
+com\vaultiq\VaultIqApplication.class
+com\vaultiq\model\Category.class
+com\vaultiq\controller\TransactionController.class
+com\vaultiq\service\CategoryService.class
+com\vaultiq\config\WebConfig.class
+com\vaultiq\repository\TransactionRepository.class
+com\vaultiq\config\WebConfig$1.class
+com\vaultiq\model\Transaction.class
+com\vaultiq\service\TransactionService.class
